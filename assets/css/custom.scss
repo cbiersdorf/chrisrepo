@@ -23,17 +23,19 @@ header h1 {
 .resource {
   margin: 2.5%;
 }
-.img-right teaser-image  {
+.img-right {
   @media all and (min-width: 960px) {
     width:33%;
     float: right;
   }
 }
+.teaser-image {
+  margin-top: 34px;
+}
 .teaser-content {
   @media all and (min-width: 960px) {
     width: 66%;
     float: left;
-    padding-left: 20px;
     }
 }
 .button {
@@ -52,14 +54,23 @@ font-weight: bold;
 display: inline-block;
 text-align: center;
 }
-nav.main-navigation {
-    width: 30%;
-    float: left;
-}
-.wrapper {
-    width: 70%;
-    float: right;
+@media all and (max-width: 767px) {
+  nav.main-navigation, .wrapper {
+    width: 100%;
+    float: none;
+  }
+  nav.main-navigation {
+    position: relative;
+    top: 0;
+    left: 0%;
+    margin-left: 0;
+    text-align: center;
+    a.button {
+      width: 90%;
+      display: block;
     }
+  }
+}
 .card.bg-danger, .card .card-header-danger, .card.card-rotate.bg-danger .back, .card.card-rotate.bg-danger .front {
     background: linear-gradient(60deg,#4276b6,#ffe788);
     box-shadow: none;

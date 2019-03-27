@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <body>
+    {% include head.html %}
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+    <nav class=“main-navigation” role="off-canvas">
+      <a href="{{ "/" | relative_url }}" class="button">Directory of Resources</a>
+      <a href="{{ "/about/" | relative_url }}" class="button">About</a>
+    </nav>
+    <div class="wrapper">
+    <main>
+      <section>
+        {{ content }}
+      </section>
+    </main>
+    {% include footer.html %}
+    </div>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+    {% include js.html %}
+  </body>
+</html>

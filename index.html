@@ -15,10 +15,10 @@ layout: default
         <div class="nav-tabs-wrapper">
           <ul class="nav nav-tabs" data-tabs="tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="#alpha" data-toggle="tab">Sort alphabetically</a>
+              <a class="nav-link active" href="#alpha" data-toggle="tab">Sort alphabetically<div class ="ripple-container"></div></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#type" data-toggle="tab">Sort by Resource Type</a>
+              <a class="nav-link" href="#type" data-toggle="tab">Sort by Resource Type<div class="ripple-container"></div></a>
             </li>
           </ul>
         </div>
@@ -26,7 +26,7 @@ layout: default
     </div>
     <div class="card-body ">
       <div class="tab-content">
-        <div class="tab-pane active" id="alpha">
+        <div class="tab-pane active show" id="alpha">
           {% for lang_resource in site.lang_resources %}
            <div class="resource-teaser clearfix">
              <div class="teaser-content">
@@ -51,7 +51,7 @@ layout: default
                <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
                <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
              <div class="img-right teaser-image">
-                 <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
+               <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
               </div>
             </div>
             </div>
