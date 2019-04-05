@@ -7,6 +7,13 @@ header h1 {
    overflow: visible;
    color: #FFE788;
 }
+h1 {
+   min-width: 50%;
+   font-size: 190%;
+   white-space: normal;
+   overflow: visible;
+   color: white;
+}
 .page-title {
    color: #fafafa;
    background-color: #4276b6;
@@ -15,14 +22,12 @@ header h1 {
 }
  h2 {
    text-decoration: underline;
+   font-size: 180%;
  }
  img {
    max-width: 100%;
    height: auto;
  }
-.resource {
-  margin: 2.5%;
-}
 .img-right {
   @media all and (min-width: 960px) {
     width:33%;
@@ -37,7 +42,7 @@ header h1 {
     width: 66%;
     float: left;
     }
-}
+  }
 .button {
 border: 1px solid #dba500;
 background: linear_gradient(#ffe788, #ffce38);
@@ -61,7 +66,7 @@ text-align: center;
   }
   nav.main-navigation {
     position: relative;
-    top: 0;
+    top: 0%;
     left: 0%;
     margin-left: 0;
     text-align: center;
