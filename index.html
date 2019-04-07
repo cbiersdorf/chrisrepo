@@ -28,38 +28,36 @@ layout: default
       <div class="tab-content">
         <div class="tab-pane active show" id="alpha">
           {% for lang_resource in site.lang_resources %}
-           <div class="resource-teaser clearfix">
-             <div class="teaser-content">
-               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
-               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
-               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
-               <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
-             <div class="img-right teaser-image">
-                 <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
-              </div>
-            </div>
-            </div>
+          <div class="resource-teaser clearfix">
+            <div class="img-right teaser-image">
+                <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
+             </div>
+            <div class="teaser-content">
+              <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+              <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
+              <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
+              <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
+           </div>
+           </div>
           {% endfor %}
         </div>
         <div class="tab-pane" id="type">
           {% assign sorted_resources = site.lang_resources | sort: "category" %}
           {% for lang_resource in sorted_resources %}
-           <div class="resource-teaser clearfix">
-             <div class="teaser-content">
-               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
-               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
-               <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
-               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
-             <div class="img-right teaser-image">
-               <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
-              </div>
-            </div>
-            </div>
+          <div class="resource-teaser clearfix">
+            <div class="img-right teaser-image">
+                <a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page"><img src="{{ lang_resource.image | relative_url }}" alt="resource logo {{ lang_resource.title }}" /></a>
+             </div>
+            <div class="teaser-content">
+              <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+              <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
+              <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
+              <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
+           </div>
+           </div>
           {% endfor %}
         <p>Coming Soon</p>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="clearfix"></div>
