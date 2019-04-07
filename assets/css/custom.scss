@@ -86,12 +86,15 @@ text-align: center;
    display: table;
 }
 p.mission{
-font-size: 125%;
+font-size: 100%;
 line-height: 2em;
 text-align: justify;
 margin-top: 5%;
 }
-
+p.type {
+font-weight: bold;
+color: #4276b6;
+}
 footer {
    display:block;
 }

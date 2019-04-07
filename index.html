@@ -34,8 +34,8 @@ layout: default
              </div>
             <div class="teaser-content">
               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+              <p class="type"> Type of Resource: <em>{{ lang_resource.category }}</em></p>
               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
-              <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
            </div>
            </div>
@@ -50,13 +50,12 @@ layout: default
              </div>
             <div class="teaser-content">
               <h2><a href="{{ lang_resource.url | relative_url }}" alt="go to the detail page">{{ lang_resource.title }}</a></h2>
+              <p class="type"> Type of Resource: <em>{{ lang_resource.category }}</em></p>
               <p>{{ lang_resource.content | truncatewords: 45, '...' }}</p>
-              <p><small> Type of Resource: <em>{{ lang_resource.category }}</em></small></p>
               <p><a href="{{ lang_resource.source}}" target="_blank">source</a></p>
            </div>
            </div>
           {% endfor %}
-        <p>Coming Soon</p>
         </div>
       </div>
     </div>
