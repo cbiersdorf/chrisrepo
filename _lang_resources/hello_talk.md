@@ -1,6 +1,6 @@
 ---
 title: Hello Talk
-layout: default
+layout: lang_resource
 source: https://www.hellotalk.com/
 category: Immersive
 image: /assets/images/hellotalk.jpg

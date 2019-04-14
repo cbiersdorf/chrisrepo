@@ -1,6 +1,6 @@
 ---
 title: Duolingo
-layout: default
+layout: lang_resource
 source: https://support.duolingo.com/hc/en-us/articles/204829090-What-is-Duolingo-
 category: Linear-Lessons
 image: /assets/images/duolingo.jpg

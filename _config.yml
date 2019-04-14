@@ -4,4 +4,4 @@ repository: cbiersdorf/chrisrepo
 collections:
   lang_resources:
     output: true
-    layout: lang_resources
+    layout: lang_resource

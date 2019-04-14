@@ -1,6 +1,6 @@
 ---
 title: Anki
-layout: default
+layout: lang_resource
 source: https://www.ankiapp.com/
 category: Self-Study
 image: /assets/images/anki.jpg

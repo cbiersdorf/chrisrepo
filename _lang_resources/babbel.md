@@ -1,6 +1,6 @@
 ---
 title: Babbel
-layout: default
+layout: lang_resource
 source: https://about.babbel.com/en/
 category: Linear-Lessons
 image: /assets/images/babbel.jpg

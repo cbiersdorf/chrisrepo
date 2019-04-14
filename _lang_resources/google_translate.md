@@ -1,6 +1,6 @@
 ---
 title: Google Translate
-layout: default
+layout: lang_resource
 source: https://support.google.com/translate/answer/6350850?hl=en&ref_topic=7011755
 category: Self-Study
 image: /assets/images/googletranslate.jpg

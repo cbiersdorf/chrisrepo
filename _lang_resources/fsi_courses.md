@@ -1,6 +1,6 @@
 ---
 title: The FSI Courses
-layout: default
+layout: lang_resource
 source: https://fsi-languages.yojik.eu/languages/fsi.html
 category: Linear-Lessons
 image: /assets/images/fsi.jpg
